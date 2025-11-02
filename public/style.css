@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; margin: 24px; line-height: 1.4; }
+h1 { margin-bottom: 12px; color: #0b5aa2; }
+.branch { border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; margin: 12px 0; background: #fafafa; }
+.branch h2 { margin: 0 0 6px; font-size: 1.1rem; }
+.branch a { text-decoration: none; }
+.branch a:hover { text-decoration: underline; }
+
+.meta { color: #555; margin: 6px 0 0; }
+.back { display: inline-block; margin-top: 16px; }
+hr { border: none; border-top: 1px solid #eee; margin: 16px 0; }

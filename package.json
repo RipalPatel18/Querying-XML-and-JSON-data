@@ -1,0 +1,14 @@
+{
+  "name": "library-branches",
+  "version": "1.0.0",
+  "description": "Lab 6 – Library Branch Data (KML Parsing)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ejs": "^3.1.10",
+    "@xmldom/xmldom": "^0.8.10"
+  }
+}

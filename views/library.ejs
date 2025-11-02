@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= branch.name %></title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    a { color: #337ab7; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <a href="/">← Back to Libraries</a>
+  <h1><%= branch.name %></h1>
+
+  <p><strong>Address:</strong> <%= branch.address %></p>
+  <p><strong>Phone:</strong> <%= branch.phone %></p>
+
+  <% if (branch.link) { %>
+  <p><strong>Link:</strong>
+    <a href="<%= branch.link %>" target="_blank">
+      <%= branch.link %>
+    </a>
+  </p>
+<% } else { %>
+  <p><strong>Link:</strong> N/A</p>
+<% } %>
+</body>
+</html>

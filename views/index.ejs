@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %></title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h1 { color: #2e6da4; }
+    .branch { border-bottom: 1px solid #ccc; padding: 10px 0; }
+    a { color: #337ab7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Libraries</h1>
+  <% branches.forEach(branch => { %>
+    <div class="branch">
+      <h2><a href="/library/<%= branch.id %>"><%= branch.name %></a></h2>
+      <p><%- branch.description %></p>
+    </div>
+  <% }) %>
+</body>
+</html>
